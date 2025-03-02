@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
-// --------------------------------------------------------------------------------
-//    reset
-// --------------------------------------------------------------------------------
+/* --------------------------------------------
+reset
+----------------------------------------------- */
 
 html, body, div, span,
 article, section, nav, header, footer, main, aside,
@@ -62,7 +62,7 @@ html {
 body {
   font-size: 1.4rem;
   line-height: 1.7;
-  color: #333333;
+  color: #000000;
   letter-spacing: 0;
   font-weight: 400;
   font-family: "Shippori Antique", serif;
@@ -72,7 +72,7 @@ body {
 a,
 button {
   display: block;
-  color: #333333;
+  color: #000000;
   text-decoration: none;
   cursor: pointer;
 }
@@ -86,4 +86,142 @@ video[src$=".svg"] {
   width: auto;
   min-width: 100%;
   max-width: 100%;
+}
+
+/* --------------------------------------------
+module
+----------------------------------------------- */
+
+/* inner */
+.mod-inner {
+  width: calc(100% - 25px * 2);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* --------------------------------------------
+body
+----------------------------------------------- */
+
+.body {
+  position: relative;
+  min-height: 100vh;
+  padding: calc(50px + 25px) 0 calc(25px + 25px) 0;
+  background-color: #FFFFFF;
+  background-image: radial-gradient(circle, #000000 1px, transparent 1px), radial-gradient(circle, #000000 1px, transparent 1px);
+  background-position: 0 0, 2px 4px;
+  background-size: 4px 8px;
+  border: solid 3px #000000;
+}
+
+/* --------------------------------------------
+header
+----------------------------------------------- */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #000000;
+  z-index: 100;
+}
+.header .header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+/* navgation */
+.header .nav__btn {
+  position: relative;
+  width: 30px;
+  height: 20px;
+}
+.header .nav__btn::before,
+.header .nav__btn::after,
+.header .nav__btn span {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  text-indent: -9999px;
+  background: #FFFFFF;
+}
+.header .nav__btn::before {
+  top: 0;
+  transform: translate(0, 0) rotate(0);
+}
+.header .nav__btn::after {
+  top: 100%;
+  transform: translate(0, -100%) rotate(0);
+}
+.header .nav__btn span {
+  top: 50%;
+  transform: translate(0, -50%) rotate(0);
+}
+.header .nav__btn.is-open::before,
+.header .nav__btn.is-open::after {
+  top: 50%;
+  left:50%;
+}
+.header .nav__btn.is-open::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.header .nav__btn.is-open::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+.header .nav__btn.is-open span {
+  width: 0;
+}
+.header .nav__content {
+  position: fixed;
+  top: 50px;
+  left: 100%;
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 25px;
+  background: #000000;
+  z-index: 100;
+}
+.header .nav__content.is-open {
+  left: 0;
+}
+.header .nav__item {
+  margin: 0 0 25px 0;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.header .nav__item:last-child {
+  maegin: 0;
+}
+.header .nav__item a {
+  display: inline;
+  color: #FFFFFF;
+}
+
+/* --------------------------------------------
+footer
+----------------------------------------------- */
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 25px;
+  background: #000000;
+}
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.footer__txt {
+  font-size: 1.2rem;
+  color: #FFFFFF;
 }
