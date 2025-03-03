@@ -99,6 +99,60 @@ module
   margin: 0 auto;
 }
 
+/* title */
+.mod-ttl {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 13px 25px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #FFFFFF;
+  background: #000000;
+}
+.mod-ttl span {
+  font-size: 1.4rem;
+}
+.mod-ttl span::after {
+  content: '\A';
+  white-space: pre;
+}
+
+/* content */
+.mod-content {
+  margin: 0 0 25px 0;
+  padding: 25px;
+  backdround: #FFFFFF;
+  border: solid 3px #000000;
+}
+.mod-content:last-child {
+  margin: 0;
+}
+
+/* button */
+.mod-btn {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+.mod-btn a {
+  padding: 3px 25px;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #FFFFFF;
+  background: #000000;
+  border: solid 3px #000000;
+  border-radius: 100px;
+}
+.mod-btn.mod-btn__next a::after {
+  content: '>';
+  margin: 0 0 0 1rem;
+}
+.mod-btn.mod-btn__prev a::after {
+  content: '<';
+  margin: 0 1rem 0 0;
+}
+
 /* --------------------------------------------
 body
 ----------------------------------------------- */
