@@ -81,8 +81,7 @@ video {
   width: 100%;
   vertical-align: bottom;
 }
-img[src$=".svg"],
-video[src$=".svg"] {
+img[src$=".svg"] {
   width: auto;
   min-width: 100%;
   max-width: 100%;
@@ -136,13 +135,13 @@ module
 .mod-txt:last-child {
   margin: 0;
 }
-.mod-txt.mod-txt__left {
+.mod-txt.mod-txt--left {
   text-align: left;
 }
-.mod-txt.mod-txt__right {
+.mod-txt.mod-txt--right {
   text-align: right;
 }
-.mod-txt.mod-txt__center {
+.mod-txt.mod-txt--center {
   text-align: center;
 }
 
@@ -161,11 +160,11 @@ module
   border: solid 3px #000000;
   border-radius: 100px;
 }
-.mod-btn.mod-btn__next a::after {
+.mod-btn.mod-btn--next a::after {
   content: '>';
   margin: 0 0 0 1em;
 }
-.mod-btn.mod-btn__prev a::after {
+.mod-btn.mod-btn--prev a::after {
   content: '<';
   margin: 0 1em 0 0;
 }
@@ -285,7 +284,7 @@ header
   text-align: center;
 }
 .header .nav__item:last-child {
-  maegin: 0;
+  margin: 0;
 }
 .header .nav__item a {
   display: inline;
