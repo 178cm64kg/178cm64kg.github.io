@@ -217,6 +217,7 @@ header
   position: relative;
   width: 30px;
   height: 20px;
+  cursor: pointer;
 }
 .header .nav__btn::before,
 .header .nav__btn::after,
