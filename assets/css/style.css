@@ -209,14 +209,16 @@ header
 }
 .header .nav__item {
   margin: 0 0 25px 0;
-  font-size: 1.8rem;
-  text-align: center;
 }
 .header .nav__item:last-child {
   maegin: 0;
 }
 .header .nav__item a {
-  display: inline;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  font-size: 1.8rem;
   color: #FFFFFF;
 }
 
