@@ -176,7 +176,7 @@ body
 
 .body {
   position: relative;
-  min-height: 100vh;
+  min-height: 100svh;
   padding: calc(50px + 25px) 0 calc(25px + 25px) 0;
   background-color: #FFFFFF;
   background-image: -o-radial-gradient(circle, #000000 1px, transparent 1px), -o-radial-gradient(circle, #000000 1px, transparent 1px);
