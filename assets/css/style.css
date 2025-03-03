@@ -122,11 +122,28 @@ module
 .mod-content {
   margin: 0 0 25px 0;
   padding: 25px;
-  backdround: #FFFFFF;
+  background: #FFFFFF;
   border: solid 3px #000000;
 }
 .mod-content:last-child {
   margin: 0;
+}
+
+/* text */
+.mod-txt {
+  margin: 0 0 1em 0;
+}
+.mod-txt:last-child {
+  margin: 0;
+}
+.mod-txt.mod-txt__left {
+  text-align: left;
+}
+.mod-txt.mod-txt__right {
+  text-align: right;
+}
+.mod-txt.mod-txt__center {
+  text-align: center;
 }
 
 /* button */
@@ -146,11 +163,11 @@ module
 }
 .mod-btn.mod-btn__next a::after {
   content: '>';
-  margin: 0 0 0 1rem;
+  margin: 0 0 0 1em;
 }
 .mod-btn.mod-btn__prev a::after {
   content: '<';
-  margin: 0 1rem 0 0;
+  margin: 0 1em 0 0;
 }
 
 /* --------------------------------------------
