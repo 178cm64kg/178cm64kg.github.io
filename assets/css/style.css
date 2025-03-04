@@ -103,7 +103,7 @@ module
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 13px 25px;
+  padding: 10px 25px;
   font-size: 1.8rem;
   font-weight: 400;
   color: #FFFFFF;
@@ -152,7 +152,7 @@ module
   margin: 0 auto;
 }
 .mod-btn a {
-  padding: 3px 25px;
+  padding: 5px;
   font-size: 1.6rem;
   text-align: center;
   color: #FFFFFF;
