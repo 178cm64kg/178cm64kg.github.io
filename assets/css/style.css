@@ -74,7 +74,15 @@ button {
   display: block;
   color: #000000;
   text-decoration: none;
+  opacity: 1;
+  -webkit-transition: all 0.25s ease-out 0s;
+  -o-transition: all 0.25s ease-out 0s;
+  transition: all 0.25s ease-out 0s;
   cursor: pointer;
+}
+a:hover,
+button:hover {
+  opacity: 0.5;
 }
 img,
 video {
@@ -160,6 +168,11 @@ module
   border: solid 3px #000000;
   border-radius: 100px;
 }
+.mod-btn a:hover {
+  color: #000000;
+  background: #FFFFFF;
+  opacity: 1;
+}
 .mod-btn.mod-btn--next a::after {
   content: '>';
   margin: 0 0 0 1em;
@@ -231,7 +244,6 @@ header
   position: relative;
   width: 30px;
   height: 20px;
-  cursor: pointer;
 }
 .header .nav__btn::before,
 .header .nav__btn::after,
@@ -243,6 +255,9 @@ header
   height: 3px;
   text-indent: -9999px;
   background: #FFFFFF;
+  -webkit-transition: all 0.25s ease-out 0s;
+  -o-transition: all 0.25s ease-out 0s;
+  transition: all 0.25s ease-out 0s;
 }
 .header .nav__btn::before {
   top: 0;
@@ -289,6 +304,9 @@ header
   padding: 25px;
   background: #000000;
   z-index: 100;
+  -webkit-transition: all 0.25s ease-out 0s;
+  -o-transition: all 0.25s ease-out 0s;
+  transition: all 0.25s ease-out 0s;
 }
 .header .nav__content.is-open {
   left: 0;
