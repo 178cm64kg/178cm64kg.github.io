@@ -168,6 +168,21 @@ module
   content: '<';
   margin: 0 1em 0 0;
 }
+.mod-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -13px;
+}
+.mod-btns .mod-btn {
+  width: calc(50% - 13px * 2);
+  margin: 13px;
+}
 
 /* --------------------------------------------
 body
