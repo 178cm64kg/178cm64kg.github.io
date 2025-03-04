@@ -241,13 +241,17 @@ header
 
 /* navgation */
 .header .nav__btn {
-  position: relative;
   width: 30px;
   height: 20px;
 }
-.header .nav__btn::before,
-.header .nav__btn::after,
-.header .nav__btn span {
+.header .nav__btn button {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.header .nav__btn button::before,
+.header .nav__btn button::after,
+.header .nav__btn button span {
   content: '';
   position: absolute;
   left: 0;
@@ -259,40 +263,40 @@ header
   -o-transition: all 0.25s ease-out 0s;
   transition: all 0.25s ease-out 0s;
 }
-.header .nav__btn::before {
+.header .nav__btn button::before {
   top: 0;
   -webkit-transform: translate(0, 0) rotate(0);
       -ms-transform: translate(0, 0) rotate(0);
           transform: translate(0, 0) rotate(0);
 }
-.header .nav__btn::after {
+.header .nav__btn button::after {
   top: 100%;
   -webkit-transform: translate(0, -100%) rotate(0);
       -ms-transform: translate(0, -100%) rotate(0);
           transform: translate(0, -100%) rotate(0);
 }
-.header .nav__btn span {
+.header .nav__btn button span {
   top: 50%;
   -webkit-transform: translate(0, -50%) rotate(0);
       -ms-transform: translate(0, -50%) rotate(0);
           transform: translate(0, -50%) rotate(0);
 }
-.header .nav__btn.is-open::before,
-.header .nav__btn.is-open::after {
+.header .nav__btn.is-open button::before,
+.header .nav__btn.is-open button::after {
   top: 50%;
   left:50%;
 }
-.header .nav__btn.is-open::before {
+.header .nav__btn.is-open button::before {
   -webkit-transform: translate(-50%, -50%) rotate(45deg);
       -ms-transform: translate(-50%, -50%) rotate(45deg);
           transform: translate(-50%, -50%) rotate(45deg);
 }
-.header .nav__btn.is-open::after {
+.header .nav__btn.is-open button::after {
   -webkit-transform: translate(-50%, -50%) rotate(-45deg);
       -ms-transform: translate(-50%, -50%) rotate(-45deg);
           transform: translate(-50%, -50%) rotate(-45deg);
 }
-.header .nav__btn.is-open span {
+.header .nav__btn.is-open button span {
   width: 0;
 }
 .header .nav__content {
