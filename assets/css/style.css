@@ -159,8 +159,12 @@ module
   max-width: 200px;
   margin: 0 auto;
 }
-.mod-btn a {
+.mod-btn a,
+.mod-btn button {
+  width: 100%;
+  height: 100%;
   padding: 5px;
+  font: inherit;
   font-size: 1.6rem;
   text-align: center;
   color: #FFFFFF;
@@ -168,16 +172,19 @@ module
   border: solid 3px #000000;
   border-radius: 100px;
 }
-.mod-btn a:hover {
+.mod-btn a:hover,
+.mod-btn button:hover {
   color: #000000;
   background: #FFFFFF;
   opacity: 1;
 }
-.mod-btn.mod-btn--next a::after {
+.mod-btn.mod-btn--next a::after,
+.mod-btn.mod-btn--next button::after {
   content: '>';
   margin: 0 0 0 1em;
 }
-.mod-btn.mod-btn--prev a::after {
+.mod-btn.mod-btn--prev a::after,
+.mod-btn.mod-btn--prev button::after {
   content: '<';
   margin: 0 1em 0 0;
 }
